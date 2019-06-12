@@ -253,8 +253,8 @@ for (var i = 0; i <= imageCount; i++) {
   $('#bo_v_con img').eq(i).wrap('<a href="' + srcTotal + '" />');
 }
 
-$('#bo_v_con a').attr('data-lightbox', 'red2gallery');
-
+//$('#bo_v_con a').attr('data-lightbox', 'red2gallery');
+$("#bo_v_con a:has('img')").attr('data-lightbox', 'red2gallery');
 
 </script>
 <!-- } 게시글 읽기 끝 -->
