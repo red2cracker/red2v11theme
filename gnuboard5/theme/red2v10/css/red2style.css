@@ -129,8 +129,11 @@ a:focus, a:hover {
   letter-spacing: -2px;
   margin-right: 0.8rem;
 }
-
-
+/*
+.navbar-brand:focus {
+  border: 1px dashed #fff;
+}
+*/
 
 
 
@@ -547,6 +550,11 @@ _:-ms-fullscreen, :root #cse-search-button {
   width: 200px;
 }*/
 
+/*
+button.navbar-toggler:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+*/
 
 
 /* Small devices (landscape phones, 576px and up) */
