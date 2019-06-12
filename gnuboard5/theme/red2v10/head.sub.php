@@ -100,6 +100,7 @@ if($pagename == "memo.php") {
 <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
 
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/red2style.css">
+<link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/lightbox.css">
 <!--<link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/red2page.css">-->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link rel="shortcut icon" href="<?php echo G5_THEME_IMG_URL; ?>/red2fav.ico" type="image/x-icon" />
@@ -137,6 +138,7 @@ var g5_cookie_domain = "<?php echo G5_COOKIE_DOMAIN ?>";
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="<?php echo G5_THEME_JS_URL ?>/red2custom.js"></script>
+<script src="<?php echo G5_THEME_JS_URL ?>/lightbox.js"></script>
 <?php
 if(G5_IS_MOBILE) {
     echo '<script src="'.G5_JS_URL.'/modernizr.custom.70111.js"></script>'.PHP_EOL; // overflow scroll 감지
