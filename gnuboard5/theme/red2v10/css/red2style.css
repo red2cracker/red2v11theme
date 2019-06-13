@@ -220,6 +220,40 @@ a:focus, a:hover {
   transition: none; /* for IE */
 }
 
+/* 구글 검색창 (기본 스타일 초기화) */
+.cse-search-box {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.cse-keyword {
+  width: 170px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  /* !important 를 추가해야 검색창 너비 변하는 트랜지션 작동 안함 */
+  -webkit-transition: none !important; /* for 크롬 */
+  transition: none !important; /* for IE */
+  height: 34px; /* 중요 */
+}
+.cse-search-button {
+  padding: 5px 10px;
+  border: none;
+  border: 1px solid #000;
+  height: 34px; /* 중요 */
+  /*line-height: 10px;*/
+  background-color: #2567fc;
+  color: #fff;
+}
+.cse-search-button:hover {
+  color: #f00;
+  background-color: #2550fc;
+}
+/*
+_:-ms-fullscreen, :root .cse-search-button {
+  line-height: 3px;
+}
+*/
+
+
 /* IE11 검색창 높이 조정 */
 _:-ms-fullscreen, :root #cse-keyword {
   font-size: 1.3rem;
@@ -611,6 +645,16 @@ button.navbar-toggler:focus {
   display: inline;
 }
 
+
+.cse-search-box {
+  margin-top: 0;
+  margin-bottom: 0;  
+}
+.cse-keyword {
+  width: 120px;
+}
+
+
 /* 메뉴에 마우스를 올리면 하위 메뉴 나타남 */
 /* http://blog.naver.com/scabbard2/220224438042 */
 .nav-item:hover > .dropdown-menu {
@@ -804,6 +848,10 @@ a.nav-link {
 }
 #cse-search-button {
   display: inline;
+}
+
+.cse-keyword {
+  width: 150px;
 }
 
 /* 참고 사이트: https://www.w3schools.com/css/css3_2dtransforms.asp */

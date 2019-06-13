@@ -126,12 +126,12 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 <?php echo outlogin('theme/red2m'); ?>
 
 <!-- Google 검색 -->
-<form action="http://www.google.co.kr" id="cse-search-box" class="" role="search">
+<form action="http://www.google.co.kr" class="cse-search-box" class="" role="search">
   <div>
     <input type="hidden" name="cx" value="partner-pub-4096343605930509:6706445990">
     <input type="hidden" name="ie" value="UTF-8">
-    <input type="text" name="q" id="cse-keyword" title="검색어 입력">
-    <input type="submit" name="sa" id="cse-search-button" value="&#xac80;&#xc0c9;">
+    <input type="text" name="q" class="cse-keyword" title="검색어 입력">
+    <input type="submit" name="sa" class="cse-search-button" value="&#xac80;&#xc0c9;">
   </div>
 </form>
 

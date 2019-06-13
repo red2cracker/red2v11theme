@@ -38,7 +38,6 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 
 
-
 <!-- SNS 링크(목록대신 문단과 | 사용) -->
 <!-- https://www.youtube.com/yt/about/brand-resources/#logos-icons-colors -->
 <ul class="sns-link">
