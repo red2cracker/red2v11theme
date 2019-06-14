@@ -51,6 +51,37 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         <h2 class="sound_only">개인정보 입력</h2>
 
         <ul>
+            <li>
+                <label for="reg_mb_name"><strong>이름<span>*</span></strong></label>
+                <input type="text" id="reg_mb_name" name="mb_name" value="<?php echo get_text($member['mb_name']) ?>" <?php echo $required ?> <?php echo $readonly; ?> class="frm_input reg_input_rwd <?php echo $required ?> <?php echo $readonly ?>" size="10" placeholder="이름">
+                <?php
+                if($config['cf_cert_use']) {
+                    if($config['cf_cert_ipin'])
+                        echo '<button type="button" id="win_ipin_cert" class="btn_frmline">아이핀 본인확인</button>'.PHP_EOL;
+                    if($config['cf_cert_hp'])
+                        echo '<button type="button" id="win_hp_cert" class="btn_frmline">휴대폰 본인확인</button>'.PHP_EOL;
+
+                    echo '<noscript>본인확인을 위해서는 자바스크립트 사용이 가능해야합니다.</noscript>'.PHP_EOL;
+                }
+                ?>
+                <?php
+                if ($config['cf_cert_use'] && $member['mb_certify']) {
+                    if($member['mb_certify'] == 'ipin')
+                        $mb_cert = '아이핀';
+                    else
+                        $mb_cert = '휴대폰';
+                ?>
+  
+                <div id="msg_certify">
+                    <strong><?php echo $mb_cert; ?> 본인확인</strong><?php if ($member['mb_adult']) { ?> 및 <strong>성인인증</strong><?php } ?> 완료
+                </div>
+                <?php } ?>
+                <?php if ($config['cf_cert_use']) { ?>
+                <span class="frm_info">아이핀 본인확인 후에는 이름이 자동 입력되고 휴대폰 본인확인 후에는 이름과 휴대폰번호가 자동 입력되어 수동으로 입력할수 없게 됩니다.</span>
+                <?php } ?>
+
+                
+            </li>
             <?php if ($req_nick) {  ?>
             <li>
                 <label for="reg_mb_nick"><strong>닉네임<span>*</span></strong></label>
@@ -255,7 +286,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         }
 
         // 이름 검사
-		/*
         if (f.w.value=="") {
             if (f.mb_name.value.length < 1) {
                 alert("이름을 입력하십시오.");
@@ -263,16 +293,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
                 return false;
             }
 
-            
+            /*
             var pattern = /([^가-힣\x20])/i;
             if (pattern.test(f.mb_name.value)) {
                 alert("이름은 한글로 입력하십시오.");
                 f.mb_name.select();
                 return false;
             }
-            
+            */
         }
-		*/
 
         <?php if($w == '' && $config['cf_cert_use'] && $config['cf_cert_req']) { ?>
         // 본인확인 체크
