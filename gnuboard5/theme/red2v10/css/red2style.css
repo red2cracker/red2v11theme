@@ -1002,5 +1002,22 @@ nav.navbar {
   border: 1px solid #f00;
 }
 
+
+/* 사이트 소개(About Us) 스타일 */
+.container-about-us {
+  display: flex;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+}
+
+.container-about-us .image {
+  margin-right: 10px;
+  flex: 170px 0;
+}
+
+.container-about-us .desc {
+  flex: 1;
+}
+
 }
 
