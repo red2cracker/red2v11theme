@@ -995,5 +995,12 @@ nav.navbar {
   margin-bottom: 0;
 }
 
+.container-history img {
+  border: 1px solid #000;
+}
+.container-history img:hover {
+  border: 1px solid #f00;
+}
+
 }
 
