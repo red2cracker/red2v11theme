@@ -1,13 +1,10 @@
 <?php
-define('_INDEX_', true);
-if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+include_once('./_common.php');
 
-if (G5_IS_MOBILE) {
-    include_once(G5_THEME_MOBILE_PATH.'/index.php');
-    return;
-}
-
-include_once(G5_THEME_PATH.'/head.php');
+//$g5['title'] = "링크";
+//$gr_id ='test';
+include_once('./_head.php');
+include_once(G5_LIB_PATH.'/latest.lib.php');
 ?>
 
 <h2 class="sound_only">최신글</h2>
@@ -38,6 +35,7 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 
 
+
 <!-- SNS 링크(목록대신 문단과 | 사용) -->
 <!-- https://www.youtube.com/yt/about/brand-resources/#logos-icons-colors -->
 <ul class="sns-link">
@@ -50,5 +48,5 @@ include_once(G5_THEME_PATH.'/head.php');
 </ul>
 
 <?php
-include_once(G5_THEME_PATH.'/tail.php');
+include_once('./_tail.php');
 ?>

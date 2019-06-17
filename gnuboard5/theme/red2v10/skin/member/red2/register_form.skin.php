@@ -32,17 +32,17 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         <ul>
             <li>
                 <label for="reg_mb_id"><strong>아이디<span>*</span></strong></label>
-                <input type="text" name="mb_id" value="<?php echo $member['mb_id'] ?>" id="reg_mb_id" <?php echo $required ?> <?php echo $readonly ?> class="frm_input reg_input_rwd <?php echo $required ?> <?php echo $readonly ?>" minlength="3" maxlength="20" placeholder="아이디">
+                <input type="text" name="mb_id" value="<?php echo $member['mb_id'] ?>" id="reg_mb_id" <?php echo $required ?> <?php echo $readonly ?> class="frm_input reg_input_rwd <?php echo $required ?> <?php echo $readonly ?>" minlength="3" maxlength="20" placeholder="">
                 <span id="msg_mb_id"></span>
                 <span class="frm_info">영문자, 숫자, _ 만 입력 가능. 최소 3자이상 입력하세요.</span>
             </li>
             <li>
                 <label for="reg_mb_password"><strong>비밀번호<span>*</span></strong></label>
-                <input type="password" name="mb_password" id="reg_mb_password" <?php echo $required ?> class="frm_input reg_input_rwd <?php echo $required ?>" minlength="3" maxlength="20" placeholder="비밀번호">
+                <input type="password" name="mb_password" id="reg_mb_password" <?php echo $required ?> class="frm_input reg_input_rwd <?php echo $required ?>" minlength="3" maxlength="20" placeholder="">
             </li>
             <li>
                 <label for="reg_mb_password_re"><strong>비밀번호 확인<span>*</span></strong></label>
-                <input type="password" name="mb_password_re" id="reg_mb_password_re" <?php echo $required ?> class="frm_input reg_input_rwd <?php echo $required ?>" minlength="3" maxlength="20" placeholder="비밀번호 확인"><!-- right_input -->
+                <input type="password" name="mb_password_re" id="reg_mb_password_re" <?php echo $required ?> class="frm_input reg_input_rwd <?php echo $required ?>" minlength="3" maxlength="20" placeholder=""><!-- right_input -->
             </li>
         </ul>
     </div>
@@ -56,7 +56,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
                 <label for="reg_mb_nick"><strong>닉네임<span>*</span></strong></label>
                 
                     <input type="hidden" name="mb_nick_default" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>">
-                    <input type="text" name="mb_nick" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>" id="reg_mb_nick" required class="frm_input required nospace  reg_input_rwd" size="10" maxlength="20" placeholder="닉네임">
+                    <input type="text" name="mb_nick" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>" id="reg_mb_nick" required class="frm_input required nospace  reg_input_rwd" size="10" maxlength="20" placeholder="">
                     <span id="msg_mb_nick"></span>
                     <span class="frm_info">
                         공백없이 한글,영문,숫자만 입력 가능 (한글2자, 영문4자 이상)<br>
@@ -76,7 +76,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
                 </span>
                 <?php }  ?>
                 <input type="hidden" name="old_email" value="<?php echo $member['mb_email'] ?>">
-                <input type="text" name="mb_email" value="<?php echo isset($member['mb_email'])?$member['mb_email']:''; ?>" id="reg_mb_email" required class="frm_input email reg_input_rwd required" size="70" maxlength="100" placeholder="이메일">
+                <input type="text" name="mb_email" value="<?php echo isset($member['mb_email'])?$member['mb_email']:''; ?>" id="reg_mb_email" required class="frm_input email reg_input_rwd required" size="70" maxlength="100" placeholder="">
             
             </li>
 
@@ -131,7 +131,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
             <?php if ($config['cf_use_signature']) {  ?>
             <li>
                 <label for="reg_mb_signature"><strong>서명(선택)</strong><?php if ($config['cf_req_signature']){ ?><strong>필수</strong><?php } ?></label>
-                <textarea name="mb_signature" id="reg_mb_signature" <?php echo $config['cf_req_signature']?"required":""; ?> class="<?php echo $config['cf_req_signature']?"required":""; ?>"   placeholder="서명"><?php echo $member['mb_signature'] ?></textarea>
+                <textarea name="mb_signature" id="reg_mb_signature" <?php echo $config['cf_req_signature']?"required":""; ?> class="<?php echo $config['cf_req_signature']?"required":""; ?>"   placeholder=""><?php echo $member['mb_signature'] ?></textarea>
             </li>
             <?php }  ?>
 
