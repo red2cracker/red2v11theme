@@ -1,6 +1,16 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
+if ($member['mb_level'] < 3) {
+    if ($w != 'u') {
+        $sql = " select count(*) as cnt from $write_table where wr_ip = '$_SERVER[REMOTE_ADDR]' and datediff(LEFT(wr_datetime, 10) , CURDATE()) = 0  AND wr_is_comment ='0'  GROUP BY wr_ip having count(*)  >= '3' ";
+        $row = sql_fetch($sql);
+            if ($row[cnt] ) {
+            alert("이 게시판은 하루에 3개의 글만 쓸 수 있습니다.");
+            }
+    }
+}
+
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
