@@ -48,6 +48,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             }
         }
 
+/*
         if ($is_secret) {
             if ($is_admin || $is_secret==1) {
                 $option .= "\n".'<input type="checkbox" id="secret" name="secret" value="secret" '.$secret_checked.'>'."\n".'<label for="secret">비밀글</label>';
@@ -55,6 +56,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 $option_hidden .= '<input type="hidden" name="secret" value="secret">';
             }
         }
+*/
 
         if ($is_mail) {
             $option .= "\n".'<input type="checkbox" id="mail" name="mail" value="mail" '.$recv_email_checked.'>'."\n".'<label for="mail">답변메일받기</label>';
