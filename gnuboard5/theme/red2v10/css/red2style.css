@@ -632,6 +632,31 @@ button.navbar-toggler:focus {
 }
 */
 
+/* https://stackoverflow.com/questions/50668594/removing-the-border-color-of-the-navbar-toggler-hamburger-icon-bootstrap-4 */
+.navbar-toggler {
+  /*border: 1px solid #000;*/
+  /*background-color: #000;*/
+}
+.navbar-toggler:focus, .navbar-toggler:hover {
+  border: 1px solid #f00;
+  /*background-color: #c2c4c6;*/
+  /*background-color: rgba(255,255,255,0.7);*/
+  outline: none;
+}
+
+
+/*
+.navbar-dark .navbar-toggler-icon:focus,
+.navbar-dark .navbar-toggler-icon:hover {
+  color: #f00;
+}
+*/
+
+/*
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+*/
 
 }
 
