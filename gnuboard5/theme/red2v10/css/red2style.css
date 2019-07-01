@@ -605,6 +605,38 @@ button.navbar-toggler:focus {
 
 }
 
+/* 스마트폰. 태블릿 1px 직전 */
+@media (max-width: 767px) {
+
+.nav-link {
+  font-size: 1.05rem;
+  /*font-weight: bold;*/
+}
+
+.dropdown-menu {
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+  background-color: #eee;
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #343a40 !important;
+  font-size: 1.05rem;
+  padding: .28rem 1.5rem !important;
+  /*color: #fff;*/
+}
+/*
+.dropdown-item:last-child {
+  border-bottom: 1px solid #f00;
+}
+*/
+
+
+}
+
+
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
@@ -714,6 +746,16 @@ last-child 가 먹히지 않아서 수동으로 클래스 지정 */
   border: 2px solid #ff6100;
   border-radius: 0.25rem;
 }
+
+.nav-link {
+  /*background-color: rgba(0, 0, 0, 0.2); */
+  /*line-height: 2rem;*/
+  /*border-left: 1px solid #000;*/
+  /*font-weight: bold;
+  font-size: 1.2rem;*/
+}
+
+
 
 .dropdown-item:focus, .dropdown-item:hover {
   color: #f00;
