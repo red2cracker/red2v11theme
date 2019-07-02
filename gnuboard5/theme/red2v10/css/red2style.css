@@ -590,6 +590,29 @@ button.navbar-toggler:focus {
 }
 */
 
+/* https://schwarzer.tistory.com/15?category=798377 */
+.move {
+  position: fixed;
+  right: 0px;
+  bottom: 50px;
+  /*background-color: #000;*/
+  color: #fff;
+  list-style: none;
+}
+.move a:first-child {
+  margin-bottom: 1px;
+}
+.move a {
+  cursor: pointer;
+  display: block;
+  /*margin-bottom: 1px;*/
+  background-color: #000;
+}
+.move a:focus, .move a:hover {
+  color: #f00 !important;
+}
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

@@ -25,3 +25,18 @@ $('div.down-menu').hover(function() {
 });
 
 */
+
+/* https://schwarzer.tistory.com/15?category=798377 */
+$(function() {
+    $("#TopButton").click(function() {
+        $('html').animate({scrollTop : 0}, 600);
+    });
+ 
+    $("#BottomButton").click(function() {
+        $('html').animate({scrollTop : ($('#footer').offset().top)}, 600);
+    });
+});
+
+
+
+
