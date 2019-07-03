@@ -16,8 +16,8 @@
 </script>
 
 <ul class="move">
-  <li><a id="TopButton" class="ScrollButton"><i class="fa fa-arrow-up" aria-hidden="true"></i> 위로</a></li>
-  <li><a id="BottomButton" class="ScrollButton"><i class="fa fa-arrow-down" aria-hidden="true"></i> 아래로</a></li>
+  <li><a id="TopButton" class="ScrollButton" rel="nofollow"><i class="fa fa-arrow-up" aria-hidden="true"></i> 위로</a></li>
+  <li><a id="BottomButton" class="ScrollButton" rel="nofollow"><i class="fa fa-arrow-down" aria-hidden="true"></i> 아래로</a></li>
 </ul>
 
 
