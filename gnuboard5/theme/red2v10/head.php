@@ -17,6 +17,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- navbar-expand-md 로 변경해야
 태블릿에서 메뉴가 나옴 -->
+
+<div class="container-fluid container-navbar">
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark d-print-none"><!-- fixed-top -->
 <?//php echo G5_URL ?>
   <a class="navbar-brand" href="http://red2.net/" title="Red2.net 홈">
@@ -145,6 +148,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 -->
   </div>
 </nav>
+
+</div>
+
 
 <!-- 참고: http://ganzi-tilong.tistory.com/17 -->
 <!-- 참고: https://getbootstrap.com/docs/4.0/layout/grid/#order-classes -->
